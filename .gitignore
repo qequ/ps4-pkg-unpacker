@@ -1,0 +1,13 @@
+# Only the unpacker is versioned here. The rest of this folder is local work (port notes, the blog,
+# logs, listings of game dumps, backups) and stays out unless it is added to this list.
+/*
+!/.gitignore
+!/README.md
+!/LICENSE
+!/build/
+!/src/
+/build/obj/
+bin/
+obj/
+.vs/
+*.user

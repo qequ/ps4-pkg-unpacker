@@ -1,0 +1,35 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <AssemblyName>PkgUnpack</AssemblyName>
+    <RootNamespace>PkgUnpack</RootNamespace>
+    <StartupObject>PkgUnpack.Program</StartupObject>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <LangVersion>7.3</LangVersion>
+    <Nullable>disable</Nullable>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+    <DefineConstants>CORE</DefineConstants>
+    <NoWarn>CS0618;CS0168;CS0219;SYSLIB0021;SYSLIB0048;CS8981</NoWarn>
+    <AutomaticallyUseReferenceAssemblyPackages>false</AutomaticallyUseReferenceAssemblyPackages>
+    <ServerGarbageCollection>false</ServerGarbageCollection>
+    <ConcurrentGarbageCollection>false</ConcurrentGarbageCollection>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="..\src\LibOrbisPkg-master\LibOrbisPkg\**\*.cs"
+             Exclude="..\src\LibOrbisPkg-master\LibOrbisPkg\Properties\AssemblyInfo.cs" />
+    <Compile Include="..\src\unpack\Program.cs" />
+    <Compile Include="..\src\unpack\ReaderChain.cs" />
+    <Compile Include="..\src\unpack\FileWindowReader.cs" />
+    <Compile Include="..\src\unpack\ChunkCache.cs" />
+    <Compile Include="..\src\unpack\XtsSectorReader.cs" />
+    <Compile Include="..\src\unpack\PfscReaderFixed.cs" />
+    <Compile Include="..\src\unpack\FixedChunkedReader.cs" />
+    <Compile Include="..\src\unpack\Sc0Entries.cs" />
+    <Compile Include="..\src\unpack\Paths.cs" />
+  </ItemGroup>
+
+</Project>
